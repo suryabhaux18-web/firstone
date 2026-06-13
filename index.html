@@ -82,25 +82,25 @@ transform:translateY(-50%);
 
 .watermark{
     position:absolute;
-    top:12px;
-    left:12px;
-    z-index:9999;
-    opacity:.75;
+    top:58%;
+    left:52%;
+    transform:translate(-50%,-50%);
     display:flex;
     align-items:center;
-    gap:8px;
-    color:#fff;
-    font-size:28px;
-    font-weight:700;
-    font-style:italic;
-    letter-spacing:2px;
+    gap:6px;
+    z-index:9998;
+    opacity:0.75;
     pointer-events:none;
+    font-family:Arial,sans-serif;
+    font-size:22px;
+    font-weight:700;
+    color:#ffffff;
+    text-shadow:0 0 5px rgba(0,0,0,.8);
 }
 
 .watermark img{
-    width:38px;
-    height:38px;
-    border-radius:50%;
+    width:24px;
+    height:24px;
 }
 
 </style>
@@ -120,12 +120,13 @@ transform:translateY(-50%);
 
 </a>
 
-<div class="watermark">
-    <img src="https://i.ibb.co/kgL4Y0CY/photo-6154609155474395282-y.jpg">
+<iframe id="main-iframe" allowfullscreen allow="encrypted-media; fullscreen; autoplay"></iframe>
+
+  <div class="watermark">
+    <img src="https://telegram.org/img/t_logo.png" alt="Telegram">
     <span>Cricxcore</span>
 </div>
-
-<iframe id="main-iframe" allowfullscreen allow="encrypted-media; fullscreen; autoplay"></iframe>
+  
 <script>
 window.addEventListener('DOMContentLoaded',()=>{
 
