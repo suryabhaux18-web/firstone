@@ -80,35 +80,26 @@ top:50%;
 transform:translateY(-50%);
 }
 
-.watermark-wrapper{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    top:50%;
+.watermark{
+    position:absolute;
     left:50%;
+    top:72%;
     transform:translate(-50%,-50%);
     display:flex;
     align-items:center;
-    gap:8px;
-    opacity:0.35;
+    gap:3px;
+    color:rgba(255,255,255,0.65);
+    font-size:14px;
+    font-family:Arial,sans-serif;
+    font-weight:600;
     pointer-events:none;
     z-index:9999;
 }
 
-.tg-logo{
-    width:32px;
-    height:32px;
-}
-
-.watermark-text{
-    font-family:Arial,sans-serif;
-    font-size:24px;
-    font-weight:700;
-    text-transform:uppercase;
-    color:#0088cc;
-    text-shadow:
-      0 0 4px rgba(0,0,0,.7),
-      0 0 8px rgba(0,0,0,.7);
+.watermark img{
+    width:18px;
+    height:18px;
+    opacity:.8;
 }
 </style>
 </head>
@@ -129,14 +120,9 @@ transform:translateY(-50%);
 
 <iframe id="main-iframe" allowfullscreen allow="encrypted-media; fullscreen; autoplay"></iframe>
 
-  <div class="watermark-wrapper">
-
-<svg class="tg-logo" viewBox="0 0 24 24" fill="none">
-<path d="M21.985 3.083L3.543 10.366C1.983 11.006 2.01 11.898 3.287 12.28L7.96 13.738L19.26 6.81C19.795 6.494 20.276 6.69 19.873 7.051L10.32 15.821L9.93 20.235C10.465 20.235 10.701 19.989 11.001 19.7L15.358 15.541L21.365 20.015C22.25 20.509 22.887 20.046 23.122 18.995L24.872 4.195C25.06 2.895 24.192 2.366 21.985 3.083Z" fill="#0088cc"/>
-</svg>
-
-<span class="watermark-text">CRICXCORE</span>
-
+  <div class="watermark">
+    <img src="telegram-icon.png" alt="Telegram">
+    <span>Cricxcore</span>
 </div>
   
 <script>
